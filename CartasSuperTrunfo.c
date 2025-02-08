@@ -13,6 +13,8 @@ int main() {
   double area;
   int pontos, turisticos;
 
+  
+
 
 
 
