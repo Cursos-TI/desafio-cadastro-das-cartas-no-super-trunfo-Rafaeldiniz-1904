@@ -16,19 +16,18 @@ int main() {
     float dencidadepopulacional1 = populacao1 / area1, pibpercapita1 = pib1 / populacao1;  
     float dencidadepopulacional2 = populacao2 / area2, pibpercapita2 = pib2 / populacao2;
 
-     // Cadastro do printf e scanf das cartas.
-     // Entrar com os códigos A01 enter e depois B02 enter.
+     // Cadastro do printf das cartas.
 
-    printf("Entre com o Código da carta 1: \n");
-    scanf("%s", &codigodacarta1);
-    printf("Estado: %c\nCódigo da carta: %s\nNome da Cidade: %s\nPopulação: %d Bilhões de pessoas\nArea: %.2f Km²\nPIB: %.2f Bilhões de reais\nPontos Turísticos: %d\n", estado1, codigodacarta1, nomedacidade1, populacao1, area1, pib1, pontoturistico1);
+    printf("Estado: %c\nCódigo da carta: %c%s\nNome da Cidade: %s\nPopulação: %d Bilhões de pessoas\nArea: %.2f Km²\nPIB: %.2f Bilhões de reais\nPontos Turísticos: %d\n", estado1, estado1, codigodacarta1, nomedacidade1, populacao1, area1, pib1, pontoturistico1);
     printf("Dencidade Populacional: %.1f Pessoas po Km²\nPIB Per capita: %.1f PIB por pessoa\n", dencidadepopulacional1, pibpercapita1);
+    printf("\n");
 
-    printf("Entre com o Código da carta 2: \n");
-    scanf("%s", &codigodacarta2);
-    printf("Estado: %c\nCódigo da carta: %s\nNome da Cidade: %s\nPopulação: %d Bilhões de pessoas\nArea: %.2f Km²\nPIB: %.2f Bilhões de reais\nPontos Turísticos: %d\n", estado2, codigodacarta2, nomedacidade2, populacao2, area2, pib2, pontoturistico2);
+    
+    printf("Estado: %c\nCódigo da carta: %c%s\nNome da Cidade: %s\nPopulação: %d Bilhões de pessoas\nArea: %.2f Km²\nPIB: %.2f Bilhões de reais\nPontos Turísticos: %d\n", estado2, estado2, codigodacarta2, nomedacidade2, populacao2, area2, pib2, pontoturistico2);
     printf("Dencidade Populacional: %.1f Pessoas por Km²\nPIB Per capita: %.1f PIB por pessoa\n", dencidadepopulacional2, pibpercapita2);
-     
+    printf("\n");
+    
+    
     // Comparação de cartas.
 
 
