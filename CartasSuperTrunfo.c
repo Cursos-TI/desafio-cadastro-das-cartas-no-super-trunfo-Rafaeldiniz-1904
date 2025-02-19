@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-     // Cadastro das variáveis.
+     
 
 int main() {
+
+// Cadastro das variáveis.
+
   char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [4] = "01", codigodacarta2[4] = "02";
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
@@ -11,10 +14,11 @@ int main() {
   float pib1 = 22222.22, pib2 = 11111.11;
   int pontoturistico1 = 10, pontoturistico2 = 20;
 
+
      //Dencidade populacional e Pib percapita.
 
-    float dencidadepopulacional1 = populacao1 / area1, pibpercapita1 = pib1 / populacao1;  
-    float dencidadepopulacional2 = populacao2 / area2, pibpercapita2 = pib2 / populacao2;
+  float dencidadepopulacional1 = populacao1 / area1, pibpercapita1 = pib1 / populacao1;  
+  float dencidadepopulacional2 = populacao2 / area2, pibpercapita2 = pib2 / populacao2;
 
      // Cadastro do printf das cartas.
 
@@ -28,10 +32,23 @@ int main() {
     printf("\n");
     
     
-    // Comparação de cartas.
+   // Comparação de cartas.
 
 
+   printf("*** Comparação de carta ***\n");
+
+    if (area1 > area2){
+      printf("Carta 1: %s:%d\n", nomedacidade1, populacao1);
+      printf("Carta 2: %s:%d\n", nomedacidade2, populacao2);
+      printf("Resultado: Carta 1 %s Vence\n",nomedacidade1);
+
+    } else {
+      printf("Carta 1: %s: %d Bilhões de População\n", nomedacidade1, populacao1);
+      printf("Carta 2: %s: %d Bilhões de População\n", nomedacidade2, populacao2);
+      printf("Resultado: Carta 2 %s Venceu\n", nomedacidade2);
     
+
+     }
 
 return 0;
   }
