@@ -36,8 +36,13 @@ int main() {
 
 
    printf("*** Comparação de carta ***\n");
+   
+   printf("\n");
+
      // Caso a carta tenha uma area km² > sera a vencedora.
      // Mas caso a outra carta tenha a Dencidade da População < a carta sera vencedora.
+
+     
     if (area1 > area2)if (dencidadepopulacional1 < dencidadepopulacional2){
       printf("Carta 1: %s:%f Area em KM²\n", nomedacidade1, area1);
       printf("Carta 2: %s:%f Area em Km²\n", nomedacidade2, area1);
