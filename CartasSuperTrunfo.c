@@ -9,9 +9,9 @@ int main() {
   char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [4] = "01", codigodacarta2[4] = "02";
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
-  int populacao1 = 2250, populacao2 = 1150;
-  float area1 = 80.22, area2 = 37.5;
-  float pib1 = 22222.22, pib2 = 11111.11;
+  int populacao1 = 5250, populacao2 = 2150;
+  float area1 = 88.22, area2 = 77.5;
+  float pib1 = 11111.22, pib2 = 33333.11;
   int pontoturistico1 = 10, pontoturistico2 = 20;
 
 
@@ -36,19 +36,19 @@ int main() {
 
 
    printf("*** Comparação de carta ***\n");
-
-    if (area1 > area2){
-      printf("Carta 1: %s:%d\n", nomedacidade1, populacao1);
-      printf("Carta 2: %s:%d\n", nomedacidade2, populacao2);
-      printf("Resultado: Carta 1 %s Vence\n",nomedacidade1);
-
+     // Caso a carta tenha uma area km² > sera a vencedora.
+     // Mas caso a outra carta tenha a Dencidade da População < a carta sera vencedora.
+    if (area1 > area2)if (dencidadepopulacional1 < dencidadepopulacional2){
+      printf("Carta 1: %s:%f Area em KM²\n", nomedacidade1, area1);
+      printf("Carta 2: %s:%f Area em Km²\n", nomedacidade2, area1);
+      printf("Carta 1 %s Venceu\n",nomedacidade1);
     } else {
-      printf("Carta 1: %s: %d Bilhões de População\n", nomedacidade1, populacao1);
-      printf("Carta 2: %s: %d Bilhões de População\n", nomedacidade2, populacao2);
-      printf("Resultado: Carta 2 %s Venceu\n", nomedacidade2);
-    
+      printf("Carta 1: %s: %f Area em Km²\n", nomedacidade1, area1);
+      printf("Carta 2: %s: %f Area em Km²\n", nomedacidade2, area2);
+      printf("Carta 2 %s Venceu\n", nomedacidade2);
+    }
 
-     }
+      printf("\n");
 
 return 0;
   }
