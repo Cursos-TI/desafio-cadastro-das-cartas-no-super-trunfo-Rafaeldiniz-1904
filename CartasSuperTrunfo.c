@@ -1,22 +1,30 @@
 #include <stdio.h>
 
-//Cadastro das variáveis
+     // Cadastro das variáveis
 
 int main() {
-  char estado1 = 'A', nome2 = 'B';
+  char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [5] = "01", codigodacarta2[5] = "02";
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
-  int populacao1, populacao2;
-  float area1, area2;
-  float pib1, pib2;
-  int pontoturistico1, pontoturistico2;
+  int populacao1 = 20, populacao2 = 15;
+  float area1 = 32.22, area2 = 25.2;
+  float pib1 = 22.22, pib2 = 11.11;
+  int pontoturistico1 = 10, pontoturistico2 = 20;
 
-//Cadastro do printf das cartas
+     // Cadastro do printf e scanf das cartas
 
-  printf("Estado: %s\n", codigodacarta1, "Código da carta: %s\n", nomedacidade1, "População: %d\n", populacao1, "Área: Km²\n", area1, "PIB: Bilhões de reais\n", pib1, "Pontos Turísticos: \n", pontoturistico1;
+    scanf("Entre com o Código da carta: \n", &codigodacarta1);
 
-printf("Estado: %s\n", codigodacarta2, "Código da carta: %s\n", nomedacidade2, "População: %d\n", populacao2, "Área: Km²\n", area2, "PIB: Bilhões de reais\n", pib2, "Pontos Turísticos: \n", pontoturistico2;
+    printf("Estado: %c\nCódigo da carta: %c%s\nNome da Cidade: %s\nPopulação: %d Bilhões de pessoas\nArea: %.2f Km²\nPIB: %.2f Bilhões de reais\nPontos Turísticos: %d\n", estado1, estado1, codigodacarta1, nomedacidade1, populacao1, area1, pib1, pontoturistico1);
+    
+    printf("Estado: %c\nCódigo da carta: %c%s\nNome da Cidade: %s\nPopulação: %d Bilhões de pessoas\nArea: %.2f Km²\nPIB: %.2f Bilhões de reais\nPontos Turísticos: %d\n", estado2, estado2, codigodacarta2, nomedacidade2, populacao2, area2, pib2, pontoturistico2);
 
+     
+
+    
+
+return 0;
+  }
 
 
   
@@ -33,7 +41,7 @@ printf("Estado: %s\n", codigodacarta2, "Código da carta: %s\n", nomedacidade2, 
   
   
   
-   / Sugestão: Defina variáveis separadas para cada atributo da cidade.
+   // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
     // Cadastro das Cartas:
@@ -44,5 +52,3 @@ printf("Estado: %s\n", codigodacarta2, "Código da carta: %s\n", nomedacidade2, 
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
-}
