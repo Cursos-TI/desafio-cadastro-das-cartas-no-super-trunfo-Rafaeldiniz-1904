@@ -8,8 +8,14 @@ int main() {
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
   int populacao1, populacao2;
   float area1, area2;
-  float PIB1, PIB2;
+  float pib1, pib2;
   int pontoturistico1, pontoturistico2;
+
+//Cadastro do printf das cartas
+
+  printf("Estado: %s\n", codigodacarta1, "Código da carta: %s\n", nomedacidade1, "População: %d\n", populacao1, "Área: Km²\n", area1, "PIB: Bilhões de reais\n", pib1, "Pontos Turísticos: \n", pontoturistico1;
+
+printf("Estado: %s\n", codigodacarta2, "Código da carta: %s\n", nomedacidade2, "População: %d\n", populacao2, "Área: Km²\n", area2, "PIB: Bilhões de reais\n", pib2, "Pontos Turísticos: \n", pontoturistico2;
 
 
 
