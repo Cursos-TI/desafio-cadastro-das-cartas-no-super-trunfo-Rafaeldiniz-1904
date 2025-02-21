@@ -4,7 +4,7 @@
 
 int main() {
 
-// Cadastro das variáveis.
+  // Cadastro das variáveis.
 
   char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [4] = "01", codigodacarta2[4] = "02";
@@ -13,6 +13,35 @@ int main() {
   float area1 = 88.22, area2 = 77.5;
   float pib1 = 11111.22, pib2 = 33333.11;
   int pontosturisticos1 = 20, pontosturisticos2 = 15;
+  
+  // Criando printf da carta 01
+  
+  printf("Carta 01:\n");
+  printf("Estado: %c\n", estado1);
+  printf("Código da Carta: %c%s\n", estado1, codigodacarta1);
+  printf("Nome da Cidade: %s\n", nomedacidade1);
+  printf("População: %d\n", populacao1);
+  printf("Área: %f\n", area1);
+  printf("PIB: %f\n", pib1);
+  printf("Números de Pontos Turisticos: %d\n", pontosturisticos1);
+ 
+
+  printf("\n");
+
+  //Criando printf da carta 02
+
+  printf("Carta 02:\n");
+  printf("Estado: %c\n", estado2);
+  printf("Código da Carta: %c%s\n", estado2, codigodacarta2);
+  printf("Nome da Cidade: %s\n", nomedacidade2);
+  printf("População: %d\n", populacao2);
+  printf("Área: %f\n", area2);
+  printf("PIB: %f\n", pib2);
+  printf("Números de Pontos Turisticos: %d\n", pontosturisticos2);
+ 
+  printf("\n");
+
+  
   return 0;
 }
 
