@@ -29,7 +29,11 @@ int main() {
   printf("Área: %f\n", area1);
   printf("PIB: %f\n", pib1);
   printf("Números de Pontos Turisticos: %d\n", pontosturisticos1);
- 
+
+  //Criação do printf Dencidade Populacional e PIB per capita carta 01
+
+  printf("Dencidade Populacional: %f\n", dencidadepopulacional1);
+  printf("PIB Per capita: %f\n", pibpercapita1);
 
   printf("\n");
 
@@ -43,6 +47,11 @@ int main() {
   printf("Área: %f\n", area2);
   printf("PIB: %f\n", pib2);
   printf("Números de Pontos Turisticos: %d\n", pontosturisticos2);
+
+  //Criação do printf Dencidade Populacional e PIB per capita carta 02
+
+  printf("Dencidade Populacional: %f\n", dencidadepopulacional2);
+  printf("PIB Per capita: %f\n", pibpercapita2);
  
   printf("\n");
 
