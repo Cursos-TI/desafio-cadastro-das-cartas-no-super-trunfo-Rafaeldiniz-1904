@@ -14,6 +14,11 @@ int main() {
   float pib1 = 11111.22, pib2 = 33333.11;
   int pontosturisticos1 = 20, pontosturisticos2 = 15;
   
+  //Variavel Dencidade Populacional e PIB per capita
+
+  float dencidadepopulacional1 = populacao1 / area1, pibpercapita1 = pib1 / populacao1;  
+  float dencidadepopulacional2 = populacao2 / area2, pibpercapita2 = pib2 / populacao2;
+
   // Criando printf da carta 01
   
   printf("Carta 01:\n");
@@ -41,7 +46,7 @@ int main() {
  
   printf("\n");
 
-  
+
   return 0;
 }
 
