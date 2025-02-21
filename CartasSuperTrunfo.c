@@ -9,7 +9,7 @@ int main() {
   char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [4] = "01", codigodacarta2[4] = "02";
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
-  int populacao1 = 5250, populacao2 = 2150;
+  int populacao1 = 3150, populacao2 = 2150;
   float area1 = 88.22, area2 = 77.5;
   float pib1 = 11111.22, pib2 = 33333.11;
   int pontosturisticos1 = 20, pontosturisticos2 = 15;
@@ -54,6 +54,22 @@ int main() {
   printf("PIB Per capita: %f\n", pibpercapita2);
  
   printf("\n");
+
+  //Comparação das cartas
+
+
+  if (populacao1 > populacao2){
+    printf("Carta 1: %s: %d\n", nomedacidade1, populacao1);
+    printf("Carta 2: %s: %d\n", nomedacidade2, populacao2);
+    printf("Resultado: Carta 01 (%s) Venceu\n",nomedacidade1);
+  } else {
+    printf("Carta 1: %s: %d\n", nomedacidade1, populacao1);
+    printf("Carta 2: %s: %d\n", nomedacidade2, populacao2);
+    printf("Resultado: Carta 02 (%s) Venceu\n", nomedacidade2);
+  }
+
+    printf("\n");
+
 
 
   return 0;
