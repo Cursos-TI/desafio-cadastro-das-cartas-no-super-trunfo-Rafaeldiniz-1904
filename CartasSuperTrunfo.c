@@ -1,11 +1,13 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
      
 
 int main() {
 
   // Cadastro das variáveis.
-
+  
+  int opcao;
   char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [4] = "01", codigodacarta2[4] = "02";
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
@@ -14,10 +16,26 @@ int main() {
   float pib1 = 11111.22, pib2 = 33333.11;
   int pontosturisticos1 = 20, pontosturisticos2 = 15;
   
-  //Variavel Dencidade Populacional e PIB per capita
+  //Cadastro da Variavel Dencidade Populacional e PIB per capita
 
   float dencidadepopulacional1 = populacao1 / area1, pibpercapita1 = pib1 / populacao1;  
   float dencidadepopulacional2 = populacao2 / area2, pibpercapita2 = pib2 / populacao2;
+
+  // Criando variavel do jogador e computador
+
+  int jogador, computador;
+  
+  // Criando o menu de inicialização do jogo
+  srand(time(0));
+
+  printf("*** JOGO SUPER TRUNFO PAÍSES *** \n");
+  printf("1.Iniciar Jogo\n");
+  printf("2.Sair\n");
+  printf("Escolha uma Opção:\n");
+  scanf("%d", &opcao);
+
+  // Criando menu switch
+
 
   // Criando printf da carta 01
   
