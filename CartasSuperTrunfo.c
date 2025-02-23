@@ -26,7 +26,6 @@ int main() {
   int jogador, computador;
   
   // Criando o menu de inicialização do jogo
-  srand(time(0));
 
   printf("*** JOGO SUPER TRUNFO PAÍSES *** \n");
   printf("1.Iniciar Jogo\n");
@@ -34,8 +33,14 @@ int main() {
   printf("Escolha uma Opção:\n");
   scanf("%d", &opcao);
 
-  // Criando menu switch
+  printf("\n");
 
+  printf("Escolha uma Carta:\n"):
+  printf("1.Carta 1\n", );
+  printf("2.Carta 2\n");
+  scanf("%d", &opcao);
+
+  printf("\n");
 
   // Criando printf da carta 01
   
