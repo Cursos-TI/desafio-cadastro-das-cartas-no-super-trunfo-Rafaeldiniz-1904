@@ -46,6 +46,7 @@ int main() {
   printf("Escolha uma Carta:\n");
   printf("1.Carta 1\n");
   printf("2.Carta 2\n");
+  printf("Carta: ");
   scanf("%d", &opcao);
 
   printf("\n");
@@ -60,28 +61,31 @@ int main() {
   printf("Estado: %c\n", estado1);
   printf("Código da Carta: %c%s\n", estado1, codigodacarta1);
   printf("Nome da Cidade: %s\n", nomedacidade1);
-  printf("População: %d\n", populacao1);
-  printf("Área: %f\n", area1);
-  printf("PIB: %f\n", pib1);
-  printf("Números de Pontos Turisticos: %d\n", pontosturisticos1);
+  printf("\n");
+  //printf("População: %d\n", populacao1);
+  //printf("Área: %f\n", area1);
+  //printf("PIB: %f\n", pib1);
+  //printf("Números de Pontos Turisticos: %d\n", pontosturisticos1);
 
 //Criação do printf Dencidade Populacional e PIB per capita carta 01
 
-  printf("Dencidade Populacional: %f\n", dencidadepopulacional1);
-  printf("PIB Per capita: %f\n", pibpercapita1);
-  printf("\n");
+  //printf("Dencidade Populacional: %f\n", dencidadepopulacional1);
+  //printf("PIB Per capita: %f\n", pibpercapita1);
+  //printf("\n");
 
   //Criação da opções de atributos Carta 01
 
-  printf("Escolha um opção:\n");
+  printf("*** Escolha um opção: ***\n");
+  printf("\n");
   printf("1.População: %d\n", populacao1);
   printf("2.Área: %f\n", area1);
   printf("3.PIB: %f\n", pib1);
   printf("4.Números de Pontos Turisticos: %d\n", pontosturisticos1);
   printf("5.Dencidade Populacional: %f\n", dencidadepopulacional1);
   printf("6.PIB Per capita: %f\n", pibpercapita1);
+  printf("\n");
+  printf("Opção de 1 a 6: ");
   scanf("%d", &opcao);
-  
 break;
 
   //Criando printf da carta 02
@@ -91,18 +95,18 @@ break;
   printf("Estado: %c\n", estado2);
   printf("Código da Carta: %c%s\n", estado2, codigodacarta2);
   printf("Nome da Cidade: %s\n", nomedacidade2);
-  printf("População: %d\n", populacao2);
-  printf("Área: %f\n", area2);
-  printf("PIB: %f\n", pib2);
-  printf("Números de Pontos Turisticos: %d\n", pontosturisticos2);
+  //printf("População: %d\n", populacao2);
+  //printf("Área: %f\n", area2);
+  //printf("PIB: %f\n", pib2);
+  //printf("Números de Pontos Turisticos: %d\n", pontosturisticos2);
 
   //Criação do printf Dencidade Populacional e PIB per capita carta 02
 
-  printf("Dencidade Populacional: %f\n", dencidadepopulacional2);
-  printf("PIB Per capita: %f\n", pibpercapita2);
+  //printf("Dencidade Populacional: %f\n", dencidadepopulacional2);
+  //printf("PIB Per capita: %f\n", pibpercapita2);
   printf("\n");
 
-   //Criação da opções de atributos Carta 01
+  //Criação da opções de atributos Carta 02
 
   printf("Escolha um opção:\n");
   printf("1.População: %d\n", populacao2);
@@ -111,6 +115,8 @@ break;
   printf("4.Números de Pontos Turisticos: %d\n", pontosturisticos2);
   printf("5.Dencidade Populacional: %f\n", dencidadepopulacional2);
   printf("6.PIB Per capita: %f\n", pibpercapita2);
+  printf("\n");
+  printf("Opção de 1 a 6: ");
   scanf("%d", &opcao);
 break;
   } 
