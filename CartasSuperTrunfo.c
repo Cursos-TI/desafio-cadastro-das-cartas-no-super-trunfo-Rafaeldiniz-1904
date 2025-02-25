@@ -29,33 +29,26 @@ int main() {
   // Criando variavel do jogador e computador
 
 
-  int jogador, computador;
+  int carta1, carta2;
   
 
   // Criando o menu de inicialização do jogo
 
 
   printf("*** JOGO SUPER TRUNFO PAÍSES *** \n");
-  printf("1.Iniciar Jogo\n");
-  printf("2.Sair\n");
-  printf("Escolha uma Opção:\n");
-  scanf("%d", &opcao);
 
   printf("\n");
 
-  printf("Escolha uma Carta:\n");
+  printf("### Escolha uma Carta ###:\n");
   printf("1.Carta 1\n");
   printf("2.Carta 2\n");
   printf("Carta: ");
-  scanf("%d", &opcao);
+  scanf("%d", &carta1, carta2);
 
   printf("\n");
 
-
   // Criando printf da carta 01
-
-
-  switch (opcao){
+switch (carta1){
   case 1:
   printf("Carta 01:\n");
   printf("Estado: %c\n", estado1);
@@ -89,8 +82,7 @@ int main() {
 break;
 
   //Criando printf da carta 02
-
-  case 2:
+case 2:
   printf("Carta 02:\n");
   printf("Estado: %c\n", estado2);
   printf("Código da Carta: %c%s\n", estado2, codigodacarta2);
@@ -118,15 +110,14 @@ break;
   printf("\n");
   printf("Opção de 1 a 6: ");
   scanf("%d", &opcao);
-break;
-  } 
-
+break;}
   printf("\n");
 
   //Comparação das cartas
 
-
-  if (populacao1 > populacao2){
+if (carta1 == carta2){
+  printf("EMPATE\N");
+} else  if (populacao1 > populacao2)
     printf("Carta 1: %s: %d\n", nomedacidade1, populacao1);
     printf("Carta 2: %s: %d\n", nomedacidade2, populacao2);
     printf("Resultado: Carta 01 (%s) Venceu\n",nomedacidade1);
