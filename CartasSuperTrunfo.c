@@ -31,9 +31,7 @@ int main() {
 
   int carta1, carta2;
   
-
   // Criando o menu de inicialização do jogo
-
 
   printf("*** JOGO SUPER TRUNFO PAÍSES *** \n");
 
