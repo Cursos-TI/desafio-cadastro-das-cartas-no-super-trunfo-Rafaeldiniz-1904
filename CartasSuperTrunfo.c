@@ -3,11 +3,11 @@
 #include <time.h>
      
 
-int main() {
-
+int main(){ 
 
   // Cadastro das variáveis.
-  int opcao;
+
+  
   char estado1 = 'A', estado2 = 'B';
   char codigodacarta1 [4] = "01", codigodacarta2[4] = "02";
   char nomedacidade1 [20] = "São Paulo", nomedacidade2 [20] = "Rio de Janeiro";
@@ -15,22 +15,15 @@ int main() {
   float area1 = 88.22, area2 = 77.5;
   float pib1 = 11111.22, pib2 = 33333.11;
   int pontosturisticos1 = 20, pontosturisticos2 = 15;
-  int carta;
+  
+
   //Cadastro da Variavel Dencidade Populacional e PIB per capita
 
   float dencidadepopulacional1 = populacao1 / area1, pibpercapita1 = pib1 / populacao1;  
   float dencidadepopulacional2 = populacao2 / area2, pibpercapita2 = pib2 / populacao2;
 
-  printf ("### ESCOLHA UMA CARTA ###\n");
-  printf ("1.Carta 1\n");
-  printf ("2.Carta 2\n");
-  printf ("Escolha: \n");
-  scanf ("%d", &carta);
-
   // Criando printf da carta 01
 
-  switch (carta){
-    case 1:
   printf("Carta 01:\n");
   printf("Estado: %c\n", estado1);
   printf("Código da Carta: %c%s\n", estado1, codigodacarta1);
@@ -46,33 +39,10 @@ int main() {
   printf("6.PIB Per capita: %f\n", pibpercapita1);
   printf("\n");
   printf("FAÇA SUA ESCOLHA: ");
-  scanf("%d", &opcao);
-  switch (opcao){
-  case 1:
-  printf("População: %d - ", populacao1);
-  break;  
-  case 2:
-  printf("Área: %f - ", area1);
-  break;  
-  case 3:
-  printf("PIB: %f - ", pib1);
-  break;  
-  case 4:
-  printf("Números de Pontos Turisticos: %d - ", pontosturisticos1);
-  break;    
-  case 5:
-  printf("Dencidade Populacional: %f - ", dencidadepopulacional1);
-  break;  
-  case 6:
-  printf("PIB Per capita: %f - ", pibpercapita1);
-  break;
-  default:
-  printf("*** OPÇÃO INVALIDA ***\n");
-}
-  break;
+  scanf("%d", &opcao1);
 
   //Criando printf da carta 02
-  case 2:
+
   printf("Carta 02:\n");
   printf("Estado: %c\n", estado2);
   printf("Código da Carta: %c%s\n", estado2, codigodacarta2);
@@ -88,44 +58,11 @@ int main() {
   printf("6.PIB Per capita: %f\n", pibpercapita2);
   printf("\n");
   printf("FAÇA SUA ESCOLHA: ");
-  scanf("%d", &opcao);
+  scanf("%d", &opcao1);
   printf("\n");
-  switch (opcao){
-    case 1:
-    printf("População: %d\n", populacao2);
-    break;  
-    case 2:
-    printf("Área: %f\n", area2);
-    break;  
-    case 3:
-    printf("PIB: %f\n", pib2);
-    break;  
-    case 4:
-    printf("Números de Pontos Turisticos: %d\n", pontosturisticos2);
-    break;    
-    case 5:
-    printf("Dencidade Populacional: %f\n", dencidadepopulacional2);
-    break;  
-    case 6:
-    printf("PIB Per capita: %f\n", pibpercapita2);
-    break;
-    default:
-    printf("*** OPÇÃO INVALIDA ***\n");
-  }
-    break;
-  }
+
   //Comparação das cartas
 
-if (populacao1 > populacao2){
-
-    printf("Carta 1: %s: %d\n", nomedacidade1, populacao1);
-    printf("Carta 2: %s: %d\n", nomedacidade2, populacao2);
-    printf("Resultado: Carta 01 (%s) Venceu\n",nomedacidade1);
-} else {
-    printf("Carta 1: %s: %d\n", nomedacidade1, populacao1);
-    printf("Carta 2: %s: %d\n", nomedacidade2, populacao2);
-    printf("Resultado: Carta 02 (%s) Venceu\n", nomedacidade2);
-}
 
 
 
